@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Noticias do Estado de Minas">
+		<meta name="author" content="Pedro Costa Calazans">
+
+		<link rel="icon" href="assets/img/favicon/favicon.ico">
+
+		<title>Estado de Minas</title>
+
+		<!-- Principal CSS do Bootstrap -->
+		<link rel="stylesheet" href="../assets/lib/css/bootstrap.min.css">
+
+		<style type="text/css">
+
+			body { background-color: #008080; }
+
+			.container { margin-top: 80px; }
+
+			.row { margin-bottom: 5px; }
+
+			img { margin: 10px; width: 300px; }
+
+			.category { margin-top: 10px; color: #ffd700; }
+
+			.title, .subtitle { color: white; }
+/*
+			.pubdate { color: #ffa07a; }
+*/
+			.continuelendo { color: #ffff00; }
+
+			div.footer div.col-3 p { text-align: center; }
+
+		</style>
+
+		<script src="../assets/lib/js/jquery-3.3.1.slim.min.js"></script>
+
+		<script src="assets/js/app.js"></script>
+
+	</head>
+
+	<body onload="obterGerais()">
+
+		<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" href="#">ESTADO de MINAS</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#" onclick="obterEconomia()">Economia</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" onclick="obterEducacao()">Educação</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#" onclick="obterGerais()">Gerais</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" onclick="obterInternacional()">Internacional</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" onclick="obterNacional()">Nacional</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" onclick="obterTecnologia()">Tecnologia</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		</header>
+
+		<div class="container"></div>
+
+		<div class="footer row justify-content-center">
+			<div class="col-3">
+				<p><strong>Estado de Minas - Notícias</strong></p>
+			</div>
+		</div>
+
+		<script src="../assets/lib/js/popper.min.js"></script>
+		<script src="../assets/lib/js/bootstrap.min.js"></script>
+
+	</body>
+</html>

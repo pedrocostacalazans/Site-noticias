@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<!-- Meta tags -->
+	<meta charset="utf-8">
+	<title>Notícias</title>
+	<meta name="author" content="Pedro Costa Calazans">
+	<meta name="description" content="Site de noticias">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="assets/lib/css/bootstrap.min.css">
+
+	<style type="text/css">
+
+	 body { background-color: #008080; }
+
+	</style>
+
+	<link rel="shortcut icon" href="noticias.ico">
+
+	<script src="assets/lib/js/jquery-3.3.1.slim.min.js"></script>
+
+	<script>
+
+	 // Na tela mobile recolher o menu ao clicar no item
+	 $(() => {
+
+		 let navMain = $('#menu');
+
+		 $('a').on('click', (e) => {
+			 let a = e.currentTarget;
+			 let tag_li = document.getElementsByClassName('nav-item active')[0];
+			 if (a.parentNode.getAttribute('class') == 'nav-item inactive') {
+				 a.parentNode.setAttribute('class', 'nav-item active');
+				 if (tag_li) {
+					 tag_li.setAttribute('class', 'nav-item inactive');
+				 }
+			 }
+			 navMain.collapse('hide');
+		 });
+
+	 });
+
+	</script>
+
+</head>
+<body>
+
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" href="#">Notícias</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item inactive">
+						<a class="nav-link" href="http://localhost:8000/correio-braziliense/" target="_correio">Correio Braziliense</a>
+					</li>
+					<li class="nav-item inactive">
+						<a class="nav-link" href="http://localhost:8000/jornal-estado-de-minas/" target="_minas">Jornal Estado de Minas</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<script src="assets/lib/js/popper.min.js"></script>
+	<script src="assets/lib/js/bootstrap.min.js"></script>
+
+</body>
+</html>
