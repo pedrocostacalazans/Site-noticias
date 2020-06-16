@@ -1,2 +1,2 @@
 # Site-noticias
-Site de noticias
+Propagação de Fake News - Grupo 4Real
