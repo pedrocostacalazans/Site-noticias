@@ -1,72 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<!-- Meta tags -->
-	<meta charset="utf-8">
-	<title>Notícias</title>
-	<meta name="author" content="Pedro Costa Calazans">
-	<meta name="description" content="Site de noticias">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8" />
+	<title>4Real</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-	<link rel="stylesheet" href="assets/lib/css/bootstrap.min.css">
+	<!-- <link rel="shortcut icon" href="assets/img/favicon/favicon.png"> -->
 
-	<style type="text/css">
-
-	 body { background-color: #008080; }
-
-	</style>
-
-	<link rel="shortcut icon" href="noticias.ico">
-
-	<script src="assets/lib/js/jquery-3.3.1.slim.min.js"></script>
-
-	<script>
-
-	 // Na tela mobile recolher o menu ao clicar no item
-	 $(() => {
-
-		 let navMain = $('#menu');
-
-		 $('a').on('click', (e) => {
-			 let a = e.currentTarget;
-			 let tag_li = document.getElementsByClassName('nav-item active')[0];
-			 if (a.parentNode.getAttribute('class') == 'nav-item inactive') {
-				 a.parentNode.setAttribute('class', 'nav-item active');
-				 if (tag_li) {
-					 tag_li.setAttribute('class', 'nav-item inactive');
-				 }
-			 }
-			 navMain.collapse('hide');
-		 });
-
-	 });
-
-	</script>
+	<link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css" />
+	<!-- Estilos customizados para esse template -->
+	<link rel="stylesheet" href="assets/css/estilos.css">
+	<script src="assets/lib/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="assets/lib/ejs.min.js"></script>
+	<script src="assets/lib/routie.min.js"></script>
+	<script src="assets/js/app.js"></script>
 
 </head>
-<body>
 
+<body>
 	<header>
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-			<a class="navbar-brand" href="#">Notícias</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(52, 111, 158);">
+			<a class="navbar-brand" href="#"><b><i>4Real</i></b></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="menu">
+			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item inactive">
-						<a class="nav-link" href="http://localhost:8000/correio-braziliense/" target="_correio">Correio Braziliense</a>
-					</li>
-					<li class="nav-item inactive">
-						<a class="nav-link" href="http://localhost:8000/jornal-estado-de-minas/" target="_minas">Jornal Estado de Minas</a>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Ajuda</a>
 					</li>
 				</ul>
+				<form class="form-inline mt-2 mt-md-0">
+					<input id="search" class="form-control mr-sm-2" type="text" placeholder="Search"
+						aria-label="Search" required/>
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+						Pesquisar
+					</button>
+				</form>
 			</div>
 		</nav>
 	</header>
 
-	<script src="assets/lib/js/popper.min.js"></script>
-	<script src="assets/lib/js/bootstrap.min.js"></script>
+	<!--<main role="main">-->
 
+	<div class="row justify-content-center">
+		<div class="col-md-7">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="first-slide" src="" alt="First slide">
+						<div class="container">
+							<div class="carousel-caption text-left transparency">
+								<h3 class="titulo"></h3>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="second-slide" src="" alt="Second slide">
+						<div class="container">
+							<div class="carousel-caption text-left transparency">
+								<h3 class="titulo"></h3>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="third-slide" src="" alt="Third slide">
+						<div class="container">
+							<div class="carousel-caption text-left transparency">
+								<h3 class="titulo"></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Voltar</span>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Avançar</span>
+				</a>
+			</div>
+		</div>
+		<div id="aside2" class="col-md-4" style="margin-left: 2%;"></div>
+	</div>
+
+	<div class="row justify-content-center">
+		<div id="container" class="col-7">
+			<h3 style="color: blue;"><strong><i>Geral</i></strong></h3>
+		</div>
+		<div id="aside" class="col-4">
+			<h3 style="color: blue;"><strong><i>Tecnologia</i></strong></h3>
+		</div>
+	</div>
+
+	<script src="assets/lib/bootstrap/js/popper.min.js"></script>
+	<script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>

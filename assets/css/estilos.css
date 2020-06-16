@@ -1,0 +1,121 @@
+hr {
+    width: 100%;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid red;
+    background-color: #dddddd;
+}
+
+img {
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+body {
+    background-color: #777;
+}
+
+#container {
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+#aside {
+    background-color: white;
+    margin-left: 1%;
+    height: 100%;
+}
+
+#aside2 {
+    background-color: white;
+    height: 100%;
+}
+
+a:hover {
+    color: #F00;
+}
+
+.transparency {
+
+    /* aqui entra as propriedades da transparência, aqui eu usei a cor white */
+
+    background: rgb(255, 255, 255) transparent;
+    /* rgb( @r, @g, @b ) */
+    background: rgba(255, 255, 255, 0.5);
+    /* rgb( @r, @g, @b, @intensidade ) */
+
+    /* Para navegadores IE 5.5 - 7 */
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=#ffffff);
+
+    /* Para navegadores IE 8 */
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=#ffffff)";
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* CUSTOMIZA O CAROUSEL
+-------------------------------------------------- */
+
+/* Classe base do carousel */
+.carousel {
+    margin-bottom: 1rem;
+}
+
+/* Já que usamos posicionamento de imagens, precisaremos fazer alguns ajustes na legenda */
+.carousel-caption {
+    bottom: 0.1rem;
+    z-index: 10;
+    color: black;
+}
+
+/* Declaramos alturas, devido ao posicionamento do elemento img */
+.carousel-item {
+    height: 32rem;
+    background-color: #777;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+
+/* CSS RESPONSIVE
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+
+    /* Aumenta o tamanho do conteúdo do carousel */
+    .carousel-caption p {
+        margin-bottom: 0.1rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .carousel-caption h3 {
+        padding: 5px;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+.justify-content-center {
+    margin-top: 70px;
+}
