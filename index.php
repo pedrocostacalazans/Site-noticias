@@ -96,10 +96,10 @@
 	</div>
 
 	<div class="row justify-content-center">
-		<div id="container" class="col-7">
+		<div id="container" class="col-md-7">
 			<h3 style="color: blue;"><strong><i>Geral</i></strong></h3>
 		</div>
-		<div id="aside" class="col-4">
+		<div id="aside" class="col-md-4">
 			<h3 style="color: blue;"><strong><i>Tecnologia</i></strong></h3>
 		</div>
 	</div>
