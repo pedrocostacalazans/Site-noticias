@@ -49,7 +49,7 @@
 	<!--<main role="main">-->
 
 	<div class="row justify-content-center">
-		<div class="col-md-7">
+		<div class="col-sm-7">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -92,14 +92,14 @@
 				</a>
 			</div>
 		</div>
-		<div id="aside2" class="col-md-4" style="margin-left: 2%;"></div>
+		<div id="aside2" class="col-sm-4" style="margin-left: 2%;"></div>
 	</div>
 
 	<div class="row justify-content-center">
-		<div id="container" class="col-md-7">
+		<div id="container" class="col-sm-7">
 			<h3 style="color: blue;"><strong><i>Geral</i></strong></h3>
 		</div>
-		<div id="aside" class="col-md-4">
+		<div id="aside" class="col-sm-4">
 			<h3 style="color: blue;"><strong><i>Tecnologia</i></strong></h3>
 		</div>
 	</div>
