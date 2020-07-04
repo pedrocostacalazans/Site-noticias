@@ -29,16 +29,31 @@
 				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
+			<div class="input-group mr-sm-2" style="width: 200px;">
+				<select class="custom-select" id="categorias" style="display: inline;">
+					<option value="geral" selected>Geral</option>
+					<option value="negocios">Negócios</option>
+					<option value="entretenimento">Entretenimento</option>
+					<option value="saude">Saúde</option>
+					<option value="ciencia">Ciência</option>
+					<option value="esporte">Esporte</option>
+				</select>
+			</div>			
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
 						<a class="nav-link" href="#">Ajuda</a>
 					</li>
 				</ul>
+				<div class="input-group mr-sm-2" style="width: 200px;">
+					<select class="custom-select" id="regSearch" style="display: inline;">
+						<option selected>Pesquisas feitas...</option>
+					</select>
+				</div>
 				<form class="form-inline mt-2 mt-md-0">
-					<input id="search" class="form-control mr-sm-2" type="text" placeholder="Search"
+					<input id="search" class="form-control mr-sm-2" type="text" placeholder="Pesquisar"
 						aria-label="Search" required/>
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+					<button class="btn btn btn-success my-2 my-sm-0" type="submit">
 						Pesquisar
 					</button>
 				</form>
@@ -96,9 +111,9 @@
 	</div>
 
 	<div class="row justify-content-center">
-		<div id="container" class="col-sm-7">
-			<h3 style="color: blue;"><strong><i>Geral</i></strong></h3>
-		</div>
+		
+		<div id="container" class="col-sm-7"></div>
+		
 		<div id="aside" class="col-sm-4">
 			<h3 style="color: blue;"><strong><i>Tecnologia</i></strong></h3>
 		</div>
